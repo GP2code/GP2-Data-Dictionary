@@ -475,10 +475,10 @@ b) Severe urinary retention or urinary incontinence in the first 5 y of disease 
 0,King's PD pain scale,6,king_03_organ_freq,Frequency of pain related to an internal organ,integer,nullable,"y.isin([0,1,2,3,4])",
 0,King's PD pain scale,7,king_04_dyskinetic_severity,Does the patient experience dyskinetic pain? (pain related to abnormal involuntary movements),integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,8,king_04_dyskinetic_freq,Frequency of dyskinetic pain,integer,nullable,"y.isin([0,1,2,3,4])",
-0,King's PD pain scale,9,king_05_offdystonia_specific_severity,Does the patient experience "off" period dystonia in a specific region? (in the area of dystonia),integer,nullable,"y.isin([0,1,2,3])",
-0,King's PD pain scale,10,king_05_offdystonia_specific_freq,"Frequency of "off" period dystonia",integer,nullable,"y.isin([0,1,2,3,4])",
-0,King's PD pain scale,11,king_06_offdystonia_general_severity,Does the patient experience generalised "off" period pain? (pain in whole body or areas distant to dystonia),integer,nullable,"y.isin([0,1,2,3])",
-0,King's PD pain scale,12,king_06_offdystonia_general_freq,"Frequency of generalised "off" period pain",integer,nullable,"y.isin([0,1,2,3,4])",
+0,King's PD pain scale,9,king_05_offdystonia_specific_severity,Does the patient experience off period dystonia in a specific region? (in the area of dystonia),integer,nullable,"y.isin([0,1,2,3])",
+0,King's PD pain scale,10,king_05_offdystonia_specific_freq,Frequency of off period dystonia,integer,nullable,"y.isin([0,1,2,3,4])",
+0,King's PD pain scale,11,king_06_offdystonia_general_severity,Does the patient experience generalised off period pain? (pain in whole body or areas distant to dystonia),integer,nullable,"y.isin([0,1,2,3])",
+0,King's PD pain scale,12,king_06_offdystonia_general_freq,Frequency of generalised off period pain,integer,nullable,"y.isin([0,1,2,3,4])",
 0,King's PD pain scale,13,king_07_leg_movement_night_severity,Does the patient experience pain related to jerking leg movements during the night (PLM) or an unpleasant burning sensation in the legs which improves with movement (RLS)?,integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,14,king_07_leg_movement_night_freq,Frequency of pain related to jerking leg movements during the night,integer,nullable,"y.isin([0,1,2,3,4])",
 0,King's PD pain scale,15,king_08_turning_in_bed_severity,Does the patient experience pain related to difficulty turning in bed at night?,integer,nullable,"y.isin([0,1,2,3])",
@@ -1202,6 +1202,7 @@ b) Severe urinary retention or urinary incontinence in the first 5 y of disease 
 ,,,,,,,,
 
 ,,,,,,,,
+
 
 
 
