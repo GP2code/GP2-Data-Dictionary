@@ -454,11 +454,11 @@ b) Severe urinary retention or urinary incontinence in the first 5 y of disease 
 0,PDQ-39,38,pdq39_38_joint_pains,PDQ-39-Q38: Had aches and pains in your joints or body?,string,nullable,"[""Never"", ""Occasionally"", ""Sometimes"", ""Often"", ""Always or cannot do at all""]",
 0,PDQ-39,39,pdq39_39_hot_or_cold,PDQ-39-Q39: Felt uncomfortably hot or cold?,string,nullable,"[""Never"", ""Occasionally"", ""Sometimes"", ""Often"", ""Always or cannot do at all""]",
 0,PDQ-39,40,pdq39_mobility_score,PDQ-39-Total Score-Mobility (item 1-10),integer,nullable,(y>=0) & (y<=40),
-0,PDQ-39,41,pdq39_adl_score,"PDQ-39-Total Score-Activities Of Daily Living (ADL, item 11-16)",integer,nullable,(y>=0) & (y<=24),
+0,PDQ-39,41,pdq39_adl_score,PDQ-39-Total Score-Activities Of Daily Living (ADL, item 11-16),integer,nullable,(y>=0) & (y<=24),
 0,PDQ-39,42,pdq39_emotional_score,"PDQ-39-Total Score-Emotional Well Being (item 17-22, max )",integer,nullable,(y>=0) & (y<=24),
 0,PDQ-39,43,pdq39_stigma_score,PDQ-39-Total Score-Stigma (item 23-26),integer,nullable,(y>=0) & (y<=16),
 0,PDQ-39,44,pdq39_social_score,PDQ-39-Total Score-Social Support (item 27-29),integer,nullable,(y>=0) & (y<=12),
-0,PDQ-39,45,pdq39_cognition_score,"PDQ-39-Total Score-Cognitive Impairment (Cognitions, item 30-33)",integer,nullable,(y>=0) & (y<=16),
+0,PDQ-39,45,pdq39_cognition_score,PDQ-39-Total Score-Cognitive Impairment (Cognitions, item 30-33),integer,nullable,(y>=0) & (y<=16),
 0,PDQ-39,46,pdq39_communication_score,PDQ-39-Total Score-Communication (item 34-36),integer,nullable,(y>=0) & (y<=12),
 0,PDQ-39,47,pdq39_discomfort_score,PDQ-39-Total Score-Bodily Discomfort (item 37-39),integer,nullable,(y>=0) & (y<=12),
 0,PDQ-8,1,pdq8_total_score,PDQ-8 (Short form of PDQ-39) Total Score,integer,nullable,(y>=0) & (y<=32),
@@ -469,7 +469,7 @@ b) Severe urinary retention or urinary incontinence in the first 5 y of disease 
 0,WBC counts,5,monocyte_count,/microL,numeric,nullable,(y>=0) & (y<=100000),
 0,King's PD pain scale,1,king_01_joints_severity,Does the patient experience pain around his/her joints? (This includes arthritic pain),integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,2,king_01_joints_freq,Frequency of joint pain,integer,nullable,"y.isin([0,1,2,3,4])",
-0,King's PD pain scale,3,king_02_deep_body_severity,"Does the patient experience pain deep within the body? (A generalised constant, dull, aching pain - central pain),integer,nullable,"y.isin([0,1,2,3])",
+0,King's PD pain scale,3,king_02_deep_body_severity,Does the patient experience pain deep within the body? (A generalised constant, dull, aching pain - central pain),integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,4,king_02_deep_body_freq,Frequency of pain deep within the body,integer,nullable,"y.isin([0,1,2,3,4])",
 0,King's PD pain scale,5,king_03_organ_severity,Does the patient experience pain related to an internal organ? (For example, pain around the liver, stomach or bowels - visceral pain)",integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,6,king_03_organ_freq,Frequency of pain related to an internal organ,integer,nullable,"y.isin([0,1,2,3,4])",
@@ -1202,6 +1202,7 @@ b) Severe urinary retention or urinary incontinence in the first 5 y of disease 
 ,,,,,,,,
 
 ,,,,,,,,
+
 
 
 
