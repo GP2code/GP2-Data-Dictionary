@@ -471,7 +471,7 @@ b) Severe urinary retention or urinary incontinence in the first 5 y of disease 
 0,King's PD pain scale,2,king_01_joints_freq,Frequency of joint pain,integer,nullable,"y.isin([0,1,2,3,4])",
 0,King's PD pain scale,3,king_02_deep_body_severity,"Does the patient experience pain deep within the body? (A generalised constant, dull, aching pain - central pain) ",integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,4,king_02_deep_body_freq,Frequency of pain deep within the body,integer,nullable,"y.isin([0,1,2,3,4])",
-0,King's PD pain scale,5,king_03_organ_severity,Does the patient experience pain related to an internal organ? (For example, pain around the liver, stomach or bowels - visceral pain),integer,nullable,"y.isin([0,1,2,3])",
+0,King's PD pain scale,5,king_03_organ_severity,Does the patient experience pain related to an internal organ? (For example, pain around the liver, stomach or bowels - visceral pain)",integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,6,king_03_organ_freq,Frequency of pain related to an internal organ,integer,nullable,"y.isin([0,1,2,3,4])",
 0,King's PD pain scale,7,king_04_dyskinetic_severity,Does the patient experience dyskinetic pain? (pain related to abnormal involuntary movements),integer,nullable,"y.isin([0,1,2,3])",
 0,King's PD pain scale,8,king_04_dyskinetic_freq,Frequency of dyskinetic pain,integer,nullable,"y.isin([0,1,2,3,4])",
@@ -1202,6 +1202,7 @@ b) Severe urinary retention or urinary incontinence in the first 5 y of disease 
 ,,,,,,,,
 
 ,,,,,,,,
+
 
 
 
