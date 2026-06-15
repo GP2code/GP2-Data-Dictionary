@@ -1,4 +1,4 @@
-**Using and Interpreting GP2 Clinical Data**  
+# **Using and Interpreting GP2 Clinical Data**  
 *GP2 Clinical Data Team · Global Parkinson's Genetics Program*
 
 ---
