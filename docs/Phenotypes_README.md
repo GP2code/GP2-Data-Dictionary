@@ -1,5 +1,3 @@
-# GP2 Clinical Data — Release 12
-
 **Using and Interpreting GP2 Clinical Data**  
 *GP2 Clinical Data Team · Global Parkinson's Genetics Program*
 
@@ -241,7 +239,6 @@ The data dictionary is maintained as a [GP2code GitHub repository](https://githu
 
 | Resource | Link |
 |----------|------|
-| Weekly GP2 office hours | [Google Meet](http://meet.google.com/jdg-rmav-pwt) |
 | Clinical data management team | [clinicaldata@gp2.org](mailto:clinicaldata@gp2.org) |
 | Data dictionary & variable documentation | [GP2code GitHub](https://github.com/GP2code/GP2-Data-Dictionary) |
 | Phenotype assignment documentation | [GP2 Phenotype Assignment](https://github.com/GP2code/GP2-Data-Dictionary/blob/main/docs/gp2_phenotype.md) |
