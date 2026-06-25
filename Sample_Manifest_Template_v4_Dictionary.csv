@@ -1,0 +1,48 @@
+Data Dictionary,,,"* if required, no missingness allowed",
+Item,Description,ItemType,Required,Values
+study_type,"Study Type important for QC. 
+Case study or Case / Control study --> ""Case(/Control)""
+Recruitment focused on carrying specific variants (e.g. LRRK2 G2019S cohort)--> ""Genetic Enrichment"". 
+Population based study of healthy volunteers --> ""Population Cohort""
+Study recruiting prodromals (By any criteria) --> ""Prodromal""
+Brain Bank --> ""Brain Bank""
+Recruitment focused on a family history and/or suspected monogenic PD--> ""Monogenic""",string,required,"[""Case(/Control)"", ""Prodromal"", ""Genetically Enriched"", ""Population Cohort"", ""Brain Bank"", ""Monogenic""]"
+sample_id,Sample ID - the ID on the sample label. NEEDS TO BE UNIQUE,string,required,"e.g. ""B123345"""
+family_index,Clinical ID of the index case for multiple related individuals from one family. Please leave blank if no related individuals were included in the samples submitted to GP2,string,nullable,"eg. ""B123345"""
+family_index_relationship,The relationship with respect to the family_index,string,nullable,"eg. Index, sibling, Father of index, Mother of index, Maternal cousin of index, Paternal cousin of index ect..."
+sample_type,Sample type ,string,required,"allowed value is one of the following - ""Blood (EDTA)"", ""Blood (ACD)"", ""Blood', 'DNA"", ""DNA from Brain"", ""DNA from blood"", ""DNA from FFPE"", ""RNA"", ""Saliva"", ""Buccal Swab"", ""T-25 Flasks (Amniotic)"", ""FFPE Slide"", ""FFPE Block"", ""Fresh tissue"", ""Frozen tissue"", ""Bone Marrow Aspirate"", ""Whole BMA"", ""CD3+ BMA"", ""Other""]"
+DNA_volume,In micro liter,numeric,nullable,
+DNA_conc,In ng / micro liter,numeric,nullable,
+r260_280,260/280 ratio,numeric,nullable,
+Plate_name,Plate name / box name,string,nullable,"e.g. ""P01"". ""Plate2"", ""Box1"""
+Plate_position,Plate position / box position,string,nullable,"e.g. ""A1"", ""B3"""
+clinical_id,ID linked to the clinical data,string,required,"e.g. ""PDS-001"""
+study_arm,Study arm is defined by your study's specific recruitment criteria. Participants who are enrolled by distinct mechanisms should be assinged different study_arm values. ,string,required,"e.g. Case, Control, denovo PD, Hyposmia, Monogenic PD, LRRK2 G2019S Unaffected, GBA-N370S-PD"
+diagnosis,Diagnosis or most likely diagnosis. --> This will be mapped to GP2 phenotpye in the app,string,required,Free text
+sex,Sex assigned at birth,string,required,"e.g. ""Male"", ""Female"""
+race,Race category,string,nullable,"e.g. ""White"", 'American African"", ""East Asian"""
+age,Age when the sample drawn,numeric,nullable,
+age_of_onset,Age of onset if known,numeric,nullable,
+age_at_diagnosis,Age of diagnosis if known,numeric,nullable,
+age_at_death,Age of death. Most applicable to the brain bank samples,numeric,nullable,
+age_at_last_follow_up,"Age at most recent exam or follow-up. If cross-sectional, it may be the same as age",numeric,nullable,
+family_history_pd,Any known family history of Parkinson's disease,string,nullable,"e.g. ""Yes"", ""No"""
+family_history_other,Any known family history of any other neurodegenerative diseases or movement disorders,string,required,"e.g. ""Yes"", ""No"""
+family_history_details,Details regarding the family history (if positive),string,nullable,"e.g. ""sister with PD"", ""mother with PSP"", ""maternal grandfather with dementia"", ""paternal uncle with ataxia"", etc."
+region,Original region/country of the sample (Missing value will be replaced by the region of the central institution),string,nullable,"e.g. ""USA"", ""France"", ""Japan"", etc"
+comment,"Column for comments, if any",string,nullable,Free text
+alternative_id1,Alternative ID or any additonal ID to help tracking the sample,string,nullable,
+alternative_id2,For another alternative id. If needed you can add even more columns,string,nullable,
+Following columns are added by the QC app,,,,
+study,Study ID provided by CIWG,string,derived,
+Genotyping_site,Genotyping site,string,derived,"['NIH', 'Fulgent', 'DZNE', 'UCL', 'LGC', 'CIDR']"
+manifest_id,Manifest_id corresponding to the original manifest - unique to the original manifest files,string,derived,"['m1', 'm2', 'm3', ....]"
+GP2sampleID,GP2 sample ID - combination of GP2ID and sample replication No. Unique to samples.  e.g. PDSTUDY_000001_s1,string,derived,
+GP2ID,GP2ID - unique to participants e.g. PDSTUDY_000001,string,derived,
+SampleRepNo,"Replication identifiler (s1 - first sample for the participant, s2 - second sample fromt the participant and so on)",string,derived,"[""s1"", ""s2"",...]"
+GP2_phenotype,GP2 phenotype defined from diagnosis,string,derived,"[""PD"", ""Control"", ""PSP"", ""DLB"", ""MSA"", ""CBD/CBS"", ""FTD"", ""AD"", ""Mix"", ""VaD"", ""VaPD"", ""Population Control"", ""Undetermined-MCI"", ""Undetermined-Dementia"", ""Prodromal"", ""Other"", ""LBD""]"
+GP2_phenotype_for_qc,Automatically generated based on the GP2_Phenotype,string,derived,"[""PD"", ""Control"", ""Other""]"
+family_history_for_qc,Family history for QC (PD),string,derived,"[""Yes"", ""No"", ""Not Reported""]"
+region_for_qc,Region for QC,string,derived,3-digit codes
+race_for_qc,Race for QC,string,derived,"['American Indian or Alaska Native', 'Asian', 'White', 'Black or African American','Multi-racial', 'Native Hawaiian or Other Pacific Islander', 'Other', 'Unknown', 'Not Reported']"
+biological_sex_for_qc,Biological sex for QC,string,derived,"[""Male"", ""Female"", ""Other/Not reported""]"
