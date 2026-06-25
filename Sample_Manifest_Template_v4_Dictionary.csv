@@ -35,14 +35,14 @@ alternative_id1,Alternative ID or any additonal ID to help tracking the sample,s
 alternative_id2,For another alternative id. If needed you can add even more columns,string,nullable,
 Following columns are added by the QC app,,,,
 study,Study ID provided by CIWG,string,derived,
-Genotyping_site,Genotyping site,string,derived,"['NIH', 'Fulgent', 'DZNE', 'UCL', 'LGC', 'CIDR']"
-manifest_id,Manifest_id corresponding to the original manifest - unique to the original manifest files,string,derived,"['m1', 'm2', 'm3', ....]"
+Genotyping_site,Genotyping site,string,derived,"['NIH', 'Fulgent', 'DZNE', 'UCL', 'LGC', 'CIDR', 'Psomagen', 'Macrogen/USUHS']"
+manifest_id,Manifest_id corresponding to the original manifest - unique to the original manifest files,string,derived,"['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm7', 'm8', 'm9', 'm10', 'm11', 'm12', 'm13', 'm14', 'm15', 'm16', 'm17', 'm18', 'm19', 'm20']"
 GP2sampleID,GP2 sample ID - combination of GP2ID and sample replication No. Unique to samples.  e.g. PDSTUDY_000001_s1,string,derived,
 GP2ID,GP2ID - unique to participants e.g. PDSTUDY_000001,string,derived,
-SampleRepNo,"Replication identifiler (s1 - first sample for the participant, s2 - second sample fromt the participant and so on)",string,derived,"[""s1"", ""s2"",...]"
+SampleRepNo,"Replication identifiler (s1 - first sample for the participant, s2 - second sample fromt the participant and so on)",string,derived,"[""s1"", ""s2"", ""s3"", ""s4"", ""s5"", ""s6"", ""s7"", ""s8"", ""s9"", ""s10"", ""s11"", ""s12"", ""s13""]"
 GP2_phenotype,GP2 phenotype defined from diagnosis,string,derived,"[""PD"", ""Control"", ""PSP"", ""DLB"", ""MSA"", ""CBD/CBS"", ""FTD"", ""AD"", ""Mix"", ""VaD"", ""VaPD"", ""Population Control"", ""Undetermined-MCI"", ""Undetermined-Dementia"", ""Prodromal"", ""Other"", ""LBD""]"
 GP2_phenotype_for_qc,Automatically generated based on the GP2_Phenotype,string,derived,"[""PD"", ""Control"", ""Other""]"
-family_history_for_qc,Family history for QC (PD),string,derived,"[""Yes"", ""No"", ""Not Reported""]"
+family_history_for_qc,Family history for QC (PD),string,derived,"[""Yes"", ""No"", ""Other/Unknown/Not Reported"", ""Unknown""]"
 region_for_qc,Region for QC,string,derived,3-digit codes
 race_for_qc,Race for QC,string,derived,"['American Indian or Alaska Native', 'Asian', 'White', 'Black or African American','Multi-racial', 'Native Hawaiian or Other Pacific Islander', 'Other', 'Unknown', 'Not Reported']"
 biological_sex_for_qc,Biological sex for QC,string,derived,"[""Male"", ""Female"", ""Other/Not reported""]"
