@@ -22,7 +22,7 @@ The example of mapping for study_arm and diagnosis to the three GP2 phenotype va
 | RBD arm | Prodromal | Prodromal | Prodromal | Other | Prodromal |
 | RBD arm | Prodromal | PD | PD | PD | PD |
 | RBD arm | Prodromal | MSA | MSA | Other | MSA |
-| ABC Town study | Population Study | Control* | Population Control | Control | Population Control |
+| ABC Town study | Population Study | Control* | Population Control | Other | Population Control |
 | ABC Town study | Population Study | MCI | Undetermined-MCI | Other | Undetermined-MCI |
 | ABC Town study | Population Study | Dementia | Undetermined-Dementia | Other | Undetermined-Dementia |
 | ABC Town study | Population Study | AD | AD | Other | AD |
